@@ -1,7 +1,8 @@
-# Gemini Chat Navigator (Scrub-Bar)
+# Gemini Chat Navigator
 
-A minimalist, high-usability navigation sidebar for Google Gemini. This extension injects a vertical "scrub-bar" that allows you to instantly navigate through long conversations by hovering and clicking on query indicators.
-## 🛠 Installation
+This extension injects a vertical nav bar that allows you to instantly navigate through long conversations by hovering and clicking on query indicators.
+
+## Installation
 
 ### Option 1: Developer Mode (Recommended for Updates)
 1. Clone this repository: `git clone https://github.com/your-username/gemini-nav-extension.git`
