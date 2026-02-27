@@ -10,7 +10,7 @@ A minimalist, high-usability navigation sidebar for Google Gemini. This extensio
 4. Click **Load unpacked** and select the project folder.
 
 ### Option 2: Using the .crx File
-1. Go to the [Releases](link-to-your-github-releases) page of this repository.
+1. Go to the [Releases](https://github.com/aayushg1007/gemini-nav-extension/releases) page of this repository.
 2. Download the `gemini-navigator.crx` file.
 3. Open `chrome://extensions/` in your browser.
 4. **Drag and drop** the `.crx` file directly onto the page to install.
