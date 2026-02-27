@@ -1,0 +1,103 @@
+:root {
+  --gem-blue: #8ab4f8;
+  --gem-surface: #1e1f20;
+  --gem-border: #444746;
+}
+
+#gemini-nav-sidebar {
+  position: fixed !important;
+  right: 10px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 32px !important; /* Very slim by default */
+  max-height: 80vh;
+  background: var(--gem-surface) !important;
+  border: 1px solid var(--gem-border) !important;
+  border-radius: 20px !important;
+  z-index: 2147483647 !important;
+  padding: 15px 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+  transition: width 0.2s ease, background 0.2s ease, height 0.2s ease !important;
+}
+
+#gemini-nav-sidebar:hover {
+  background: #28292a !important;
+  width: 36px !important;
+}
+
+#nav-list {
+  display: flex !important;
+  flex-direction: column !important;
+  /* gap: 10px !important; */
+  width: 100% !important;
+  align-items: center !important;
+}
+
+#nav-list:hover .nav-line {
+  background: #80868b; /* Highlight all lines slightly when you enter the sidebar area */
+}
+
+#nav-list:hover .nav-item-wrapper {
+  height: 16px !important; /* Expand the clickable area when hovering over the list */
+}
+
+.nav-item-wrapper {
+  position: relative !important;
+  height: 10px !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  cursor: pointer !important;
+  background: transparent !important;
+  transition: height 0.2s ease !important;
+
+}
+/* The vertical line indicator */
+.nav-line {
+  width: 16px !important;
+  height: 3px !important;
+  background: #5f6368 !important;
+  border-radius: 4px !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  pointer-events: none;
+}
+
+.nav-item-wrapper:hover .nav-line {
+  background: var(--gem-blue) !important;
+  height: 5px !important;
+  width: 24px !important;
+}
+
+/* The expanding tooltip */
+.nav-tooltip {
+  position: absolute !important;
+  right: 45px !important;
+  top: 50% !important;
+  transform: translateY(-50%) translateX(10px) !important;
+  background: #2d2e30 !important;
+  color: #e3e3e3 !important;
+  padding: 8px 12px !important;
+  border-radius: 8px !important;
+  font-size: 12px !important;
+  font-family: 'Google Sans', Roboto, sans-serif !important;
+  white-space: nowrap !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transition: all 0.2s ease !important;
+  border: 1px solid var(--gem-border) !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4) !important;
+  max-width: 300px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.nav-item-wrapper:hover .nav-tooltip {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(-50%) translateX(0) !important;
+}
